@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "DetallePais";
+}
+<head>
+    <title> detalles @ViewBag.Pais.Nombre</title>
+    <link type="Stylesheet" src="site.css">
+</head>
+<body>
+    <img style="height:20rem; width:20rem;" src="/IMG/@ViewBag.Pais.ImgBandera">
+    <h3><b>Nombre: </b> @ViewBag.Pais.Nombre</h3>
+    <h3><b>Poblacion: </b> @ViewBag.Pais.Poblacion</h3>
+    <h3><b>Independencia: </b> @ViewBag.Pais.FechaIndependencia</h3>
+    <h3><b>Atractivos turisticos: </b> @ViewBag.Pais.AtractivosTuristicos</h3>
+    <a href='@Url.Action("Index")'><button>Volver atrás</button></a>
+</body>
